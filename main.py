@@ -8,6 +8,7 @@ Pokemon = Pokemon.title()
 
 client = discord.Client(intents=discord.Intents.default())
 PREFIX = ";"
+TOKEN = ""
 @client.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
@@ -39,4 +40,4 @@ async def on_message(message):
 
 
     
-client.run('MTAxNjQ5MDYwNDA5MzUwOTY5Mg.GguH6q.So6RpAjicFAZsPy4IpvqR4JAw7o2X6riWYWJBk')
+client.run(TOKEN)
